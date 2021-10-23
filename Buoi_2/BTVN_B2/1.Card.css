@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #E0E8FF;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card {
+  width: 375px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgb(200, 200, 200);
+}
+.card .img img{
+  width: 100%;
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
+}
+.content {
+  background-color: #F5F7FF;
+  padding: 40px 32px;
+  margin-top: -4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #363636;
+}
+.content p {
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.6;
+  font-weight: 500;
+  line-height: 24px;
+}
+.content .item {
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #e7ebff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .item a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.content .item .item-name  {
+  transform: translateX(-35px);
+  opacity: 0.8;
+}
+.content .item .item-name h6 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content .item .item-name p {
+  font-size: 16px;
+}
+.content .item a {
+  color: blue;
+  font-weight: 600;
+  font-size: 14px;
+}
+.content .proceed {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3829E0;
+  box-shadow: 5px 5px 10px #cdc9ff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.content .proceed:hover {
+  opacity: 0.9;
+}
+.content .cancel {
+  width: 300px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  padding: 14px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: #F5F7FF;
+  opacity: 0.5;
+}
+.content .cancel:hover {
+  opacity: 0.8;
+}

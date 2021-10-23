@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.container {
+  width: 320px;
+  padding: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgb(219, 219, 219);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header i {
+  color: #aaaaaa;
+  font-size: 20px;
+  transition: 0.25s;
+}
+.header i:hover {
+  cursor: pointer;
+  color: red;
+}
+.google {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  opacity: 0.7;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 212, 212);
+  box-shadow: 0 0 2px rgb(212, 212, 212);
+  margin-bottom: 18px;
+  transition: 0.4s;
+}
+.google i {
+  margin-right: 10px;
+}
+.google:hover {
+  cursor: pointer;
+  background-color: rgb(255, 14, 14);
+  color: #fff;
+}
+hr {
+  margin-bottom: 14px;
+  border-color: #fff;
+}
+form h4 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+form .email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(212, 212, 212);
+  outline: none;
+  border-radius: 5px;
+}
+form .box_pass {
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  height: 37px;
+  margin-bottom: 10px;
+}
+form .box_pass .pass {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+form .box_pass i {
+  opacity: 0.5;
+  font-size: 12px;
+}
+form .box_pass i:hover {
+  cursor: pointer;
+}
+form .remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+form .remember label {
+  font-size: 14px;
+  opacity: 0.6;
+}
+form .login {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 1px #fff;
+  border: 0;
+  border-radius: 6px;
+  background-color: #367dff;
+  box-shadow: 0 0 10px #bbd3ff;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 10px;
+}
+form .login:hover {
+  opacity: 0.9;
+}
+form .forgot {
+  width: 100%;
+  font-size: 14px;
+  color: #367dff;
+  font-weight: 600;
+  padding: 14px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+form .forgot:hover {
+  text-shadow: 0 0 5px #367dff;
+}
+
+.footer {
+    text-align: center;
+}
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.footer a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #367dff;
+  text-decoration: none;
+}
