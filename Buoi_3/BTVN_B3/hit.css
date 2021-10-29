@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: bisque;
+}
+.box {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.h {
+  display: flex;
+  align-items: center;
+}
+.t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.t1 {
+  display: flex;
+}
+.t2 {
+  display: flex;
+  flex-direction: column;
+}

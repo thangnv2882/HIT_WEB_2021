@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+.page {
+  margin: 40px 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+.header .header_user a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  gap: 12px;
+}
+.header .header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+}
+.header .header_menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header .lets_talk {
+  font-size: 20px;
+  padding: 14px 24px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+}
+.header .lets_talk:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.content .content_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 92px;
+  margin-bottom: 120px;
+}
+.content .content_top .text h1 {
+  font-size: 90px;
+  margin-bottom: 32px;
+  line-height: 110px;
+}
+.content .content_top .text p {
+  font-size: 24px;
+  opacity: 0.5;
+  margin-bottom: 60px;
+}
+.content_top .text .btn {
+  display: flex;
+  gap: 20px;
+}
+.content_top .text .btn button {
+  padding: 16px 30px;
+  border: 1px solid #000;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-weight: 500;
+}
+.content_top .text .btn .started {
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+}
+.content_top .text .btn .started:hover,
+.content_top .text .btn .more:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.content .content_top img {
+  width: 600px;
+  height: 600px;
+  border-radius: 30% 0 30% 30%;
+}
+
+.content .content_bottom {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+.content .content_bottom .meet h2 { 
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.content .content_bottom .meet p {
+  font-size: 26px;
+  opacity: 0.5;
+}
+.content .content_bottom .img {
+  width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .content_bottom img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 20px;
+}
