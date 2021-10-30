@@ -35,3 +35,24 @@
   display: flex;
   flex-direction: column;
 }
+.hai {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  position: relative;
+}
+.hai_nam {
+  display: flex;
+}
+.hai_abso {
+  position: absolute;
+}
+.hai_top {
+  top: 40px;
+  right: 0;
+}
+.hai_bottom {
+  top: 120px;
+}

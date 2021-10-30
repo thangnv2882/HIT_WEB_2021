@@ -46,6 +46,7 @@ body {
   border-radius: 10px;
   background-color: #fff;
   font-weight: 600;
+  transition: 0.4s;
 }
 .header .lets_talk:hover {
   background-color: #000;
@@ -85,6 +86,7 @@ body {
 .content_top .text .btn .started {
   background-color: rgb(49, 49, 49);
   color: #fff;
+  transition: 0.4s;
 }
 .content_top .text .btn .started:hover,
 .content_top .text .btn .more:hover {
@@ -103,9 +105,15 @@ body {
   justify-content: space-around;
   gap: 32px;
 }
+.content .content_bottom .meet {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
 .content .content_bottom .meet h2 { 
   font-size: 48px;
-  margin-bottom: 30px;
 }
 .content .content_bottom .meet p {
   font-size: 26px;
