@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Em an com chua???</h1>
+  <div class="click">
+    <div class="btn">Dong y</div>
+    <div class="btn" id="tc">Tu choi</div>
+  </div>
+  <script>
+    const btnTc = document.getElementById("tc");
+    btnTc.addEventListener("mouseenter", () => {
+      let top = Math.random()*50;
+      let left = Math.random()*50;
+
+      btnTc.style.position = "relative";
+      btnTc.style.top =  `${top}%`;
+      btnTc.style.left = `${left}%`;
+    });
+  </script>
+</body>
+</html>

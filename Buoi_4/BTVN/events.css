@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-color: #4B4C4E;
+}
+.container {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+h1 {
+  color: #fff;
+  font-size: 40px;
+}
+h2 {
+  color: red;
+  font-size: 24px;
+}
+h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+p {
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 14px;
+}
+.border-right {
+  border-right: 1px solid rgba(255, 255, 255, 0.534);
+  height: 100%;
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .box {
+    padding-bottom: 32px;
+  }
+  .border-sm-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+    margin-bottom: 16px;
+  }
+  .border-sm-none {
+    border-right: none;
+  }
+  .border-md-none {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .border-md-none {
+    border: none;
+  }
+  .box {
+    padding-bottom: 32px;
+  }
+  .border-md-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+    margin-bottom: 16px;
+  }
+  .border-md1-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .row {
+    height: 350px;
+  }
+}
