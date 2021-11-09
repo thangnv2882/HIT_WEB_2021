@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  padding: 0 30px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  background-image: url('https://allimages.sgp1.digitaloceanspaces.com/photographercomvn/2021/02/1612414344_502_Tuyen-tap-50-hinh-nen-4K-full-HD-danh-cho-scaled.jpg');
+}
+.header .link a {
+  font-size: 28px;
+  color: rgb(255, 208, 0);
+}
+.header .title {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  color: red;
+  text-shadow: 0 0 20px;
+}
+.menu {
+  height: 40px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #66FFCC;
+  font-weight: 800;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: 0.25s;
+}
+.menu a:hover {
+  background-color: #FFCCCC;
+  transition: 0.25s;
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+.content .sp_title {
+  background-color: #66FFCC;
+  text-transform: uppercase;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.content .sanpham {
+  width: 50%;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border: 1px solid rgb(233, 232, 232);
+  padding: 5px;
+}
+.item .box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: blue;
+}
+.item .box img {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid rgb(233, 232, 232);
+  padding: 5px;
+  transition: 0.25s;
+
+}
+.item .box img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+.item .box .gia1 {
+  color: red;
+}
+.content .sp_cen {
+  width: 25%;
+}
+.content .sp_right {
+  width: 25%;
+}
+.sp_right .giohang {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0 0 20px 0;
+  margin-bottom: 10px;
+}
+.sp_right .giohang .gh_title {
+  background-color: red;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.sp_right .hotro {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+.sp_right .hotro img {
+  width: 50%;
+}
