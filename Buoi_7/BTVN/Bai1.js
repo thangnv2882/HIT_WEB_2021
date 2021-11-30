@@ -16,7 +16,7 @@ function dem(array) {
   for(let value in sl) {
     console.log(`Số ${value} xuất hiện ${sl[value]} lần.` );
   }
-} 
+}  
 
 //Case 1
 const nums = [1, 3, 5, 7, 1, 2, 3, 4, 5, 6];
