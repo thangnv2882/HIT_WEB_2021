@@ -11,14 +11,10 @@ console.log(`-----MENU-----
 2. Thêm người dùng
 3. Xoá người dùng theo id
 4. Cập nhật thông tin người dùng theo id`);
-// xoá người dùng theo id, cập nhật thông tin ngưỜi dùng theo id
-function show() {
-  users.forEach(element => {
-    console.log(element);
-  });
-}
+
+const show = (user) => console.log(user);
 console.log("Users: ");
-show();
+show(users);
 
 const newUser = {
   id: 5,
@@ -27,25 +23,18 @@ const newUser = {
   gender: "male",
   money: 1500
 }
-function addUser(newUser) {
-  users.push(newUser)
-}
+const addUser = (newUser) => users.push(newUser)
 addUser(newUser);
 console.log("Users sau khi thêm: ");
-show();
+show(users);
 
 
-function deleteUser() {
-  for(let i = 0; i < users.length; i++) {
-    if(users[i].id == 3) {
-      users.splice(i, 1);
-      break;
-    }
-  }
+const deleteUser = (userId) => {
+  return users.filter((user) => user.id !== userId)
 }
-deleteUser();
+
 console.log("Users sau khi xoá: ");
-show();
+show(deleteUser(3));
 
 const userUpdate = { 
   id: 100, 
@@ -54,16 +43,13 @@ const userUpdate = {
   gender: "female", 
   money: 3000 
 }
-function updateUser() {
-  for(let i = 0; i < users.length; i++) {
-    if(users[i].id == 2) {
-      users[i] = userUpdate;
-    }
-  }
-}
-updateUser();
+const updateUser = (id, userUpdate) => {
+  return users.map((user) =>
+      user.id === id ? { ...user, ...userUpdate } : user
+  );
+};
 console.log("Users sau khi update:");
-show();
+console.log((updateUser(4, userUpdate)));
 
 // 2. Thêm 2 người vào mảng ban đầu trước khi làm ý này
 const newUser1 = {
@@ -81,60 +67,44 @@ const newUser2 = {
   money: 2500
 }
 addUser(newUser1);
-addUser(newUser2);
+addUser(newUser2); 
+show(users);
 console.log("Đã thêm 2 người vào mảng");
-// - Thống kê bao nhiêu nam,bao nhiêu người có tuổi lớn hơn 15 tuổi
-function countMale(arr) {
-  let cnt = 0;
-  arr.forEach(element => {
-    if(element.gender === "male") {
-      cnt++;
-    }
-  })
-  return cnt;
-}
-function countAge(arr) {
-  let cnt = 0;
-  arr.forEach(element => {
-    if(element.age > 15) {
-      cnt++;
-    }
-  })
-  return cnt;
-}
-console.log(`Số người giới tính nam: ${countMale(users)}`);
-console.log(`Số người có tuổi lớn hơn 15: ${countAge(users)}`);
+
+const statUsers = (users) => {
+  const stat = { nam: 0, teen: 0 };
+
+  users.map((user) => {
+      if (user.gender === "male") ++stat.nam;
+      if (user.age >= 15) ++stat.teen;
+  });
+  return stat;
+};
+console.log(statUsers(users));
 
 // - Tính tổng tiền những người có id chẵn
-function SumMoney(arr) {
-  let sum = 0;
-  arr.forEach(element => {
-    if(element.id % 2 == 0) {
-      sum += element.money;
-    }
-  })
-  return sum;
-}
-// show();
-console.log(`Tổng tiền những người có id chẵn: ${SumMoney(users)}`);
+const calcTotalMoney = (users) => {
+  return users.reduce(
+      (acc, { id, money }) => (id % 2 === 0 ? acc + money : acc),
+      0
+  );
+};
+console.log(calcTotalMoney(users));
 
 // - Ai nghèo nhất, Ai giàu nhất
-function CompareMoney(arr) {
-  let vt_max = vt_min = 0;
-  for(let i = 0; i < arr.length; i++) {
-    if(arr[i].money > arr[vt_max].money) {
-      vt_max = i;
+const compareMoney = (user) => {
+  let max = Math.max(...users.map(element => element.money));
+  let min = Math.min(...users.map(element => element.money)); 
+  users.forEach(element => {
+    if (element.money === max) {
+      console.log(`${element.name} is rich`);
     }
-    if(arr[i].money < arr[vt_min].money) {
-      vt_min = i;
+    if (element.money === min) {
+      console.log(`${element.name} is poor`);
     }
-  }
-  console.log(`Nguoi giau nhat la:`);
-  console.log(arr[vt_max]);
-  console.log(`Nguoi ngheo nhat la:`);
-  console.log(arr[vt_min]);
+  })
 } 
-CompareMoney(users);
+compareMoney(users);
 
 // 3. Chuyển hết những người có giới tính male về female
 function changeGender(arr) {
