@@ -12,7 +12,7 @@
 //  isLive: true
 // }
 
-function Post(title, body, author, comments, views, isLive) {
+function Post(title, body, author, views, comments, isLive) {
   this.title = title;
   this.body = body;
   this.author = author;
@@ -20,5 +20,5 @@ function Post(title, body, author, comments, views, isLive) {
   this.comments = comments;
   this.isLive = isLive;
 }
-const post = new Post("ahihi", "anh Hoàng đzzz", "abc",[{author: 'anh Huân đzzz', body: "lewlew"},{author: 'anh Huân đzzz', body: "lewlew"}], 100, true);
+const post = new Post("ahihi", "anh Hoàng đzzz", "abc", 100,[{author: 'anh Huân đzzz', body: "lewlew"},{author: 'anh Huân đzzz', body: "lewlew"}], true);
 console.log(post);
