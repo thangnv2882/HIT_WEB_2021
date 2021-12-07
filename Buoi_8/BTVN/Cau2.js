@@ -8,27 +8,19 @@ let digits1 = [0]
 let digits2 = [9]
 // Output: [1,0]
 
-const count9 = (digit) => {
-  let cnt = 1;
+const sum = (digit) => {
   for(let i = digit.length-1; i>=0; i--) {
     if(digit[i] == 9) {
-      cnt++;
+      digit[i] = 0;
     }
     else {
-      return cnt;
+      digit[i]++;
+      return digit;
     }
   }
+  return [1, ...digit];
 }
-const sum = (digit) => {
-  let b = [];
-  let a = digit.splice(digit.length - count9(digit));
-  a = (Number(a.join('')) + 1)
-      .toString()
-      .split('')
-      .forEach(ele => b.push(Number(ele)));
-  let c = digit.concat(b);
-  return c;
-}
+
 console.log(sum(digits));
 console.log(sum(digits1));
 console.log(sum(digits2));
