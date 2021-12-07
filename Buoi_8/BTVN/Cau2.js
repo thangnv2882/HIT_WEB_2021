@@ -21,7 +21,6 @@ const count9 = (digit) => {
 }
 const sum = (digit) => {
   let b = [];
-  // console.log(count9(digit));
   let a = digit.splice(digit.length - count9(digit));
   a = (Number(a.join('')) + 1)
       .toString()
