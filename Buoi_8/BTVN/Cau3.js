@@ -1,4 +1,4 @@
-// Câu3: Sử dụng hàm constructor để  khai báo một đối tượng post 
+// Câu3: Sử dụng hàm constructor để  khai báo một đối tượng post
 // thay vì phải khai báo như dưới đây
 // const post = {
 //  title: "ahihi",
@@ -20,5 +20,15 @@ function Post(title, body, author, views, comments, isLive) {
   this.comments = comments;
   this.isLive = isLive;
 }
-const post = new Post("ahihi", "anh Hoàng đzzz", "abc", 100,[{author: 'anh Huân đzzz', body: "lewlew"},{author: 'anh Huân đzzz', body: "lewlew"}], true);
+const post = new Post(
+  "ahihi",
+  "anh Hoàng đzzz",
+  "abc",
+  100,
+  [
+    { author: "anh Huân đzzz", body: "lewlew" },
+    { author: "anh Huân đzzz", body: "lewlew" },
+  ],
+  true
+);
 console.log(post);
