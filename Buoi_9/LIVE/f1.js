@@ -8,11 +8,13 @@ let showAge = function (age) {
 };
 console.log(showAge(18));
 
+// Function expression
 let showClass = (classs) => {
   console.log(`Class: ${classs}`);
 };
 console.log("CNTT1-K15");
 
+// Arrow Function
 let sum = (a, b) => a + b;
 console.log(sum(2,3));
 
