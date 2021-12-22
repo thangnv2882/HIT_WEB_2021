@@ -1,0 +1,64 @@
+/* FIXED */
+.buy{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.buynow{
+    position: absolute;
+    top: 1px;
+    background-color: #f3a46b;
+    left: 5px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.circle{
+    background-color: #555555;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+    border-radius: 100%;
+    display: table;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff !important; 
+    text-decoration: none;
+}
+.up{
+    position: absolute;
+    font-size: 8px;
+    left: 13px;
+    top: 22px;
+}
+.num{
+    padding-top: 7px;
+    padding-left: 5px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.leaf{
+    position: fixed;
+    bottom: 30px;
+    right: 80px;
+}
+.circle-leaf{
+    background-color: #555555;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+.leaf-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 599px){
+    .buy, .leaf{
+        display: none;
+    }
+}

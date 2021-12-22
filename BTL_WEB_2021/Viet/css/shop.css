@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  color: #555555;
+}
+.header_content .links {
+  transform: translateY(8px);
+}
+.shop-section {
+  padding-top: 21%;
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(67, 74, 84, 0.3);
+}
+
+.shop-section h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 15px;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  line-height: 30px;
+  width: 1200px;
+  margin-bottom: 45px;
+}
+
+.shop-cards {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  padding: 15px;
+  position: relative;
+}
+
+.img-card img {
+  width: 100%;
+}
+
+.hotel-name {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0px;
+  font-weight: normal;
+  color: #555555;
+
+
+}
+
+.card-content {
+
+}
+
+.vote {
+  width: 70px;
+  margin: 0 0 0.5em;
+  height: 15px;
+  line-height: 15px;
+  position: relative;
+}
+
+.vote span {
+  position: relative;
+}
+
+.vote p::before {
+  content: '\2605\2605\2605\2605\2605';
+  color: #d3ced2;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.price  {
+  color: #9a9a9a!important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap;
+}
+
+.btn-chose {
+  margin-top: 1em;
+  font-size: 13px !important;
+  line-height: 13px !important;
+  color: #9a9a9a!important;
+  font-weight: normal !important;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  border: 1px solid #f1f1f1 !important;
+  background-color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  padding: 0.618em 1em;
+  cursor: pointer;
+}
+
+.price-old {
+  color: #cdcdcd;
+  font-size: 15px;
+}
+
+.sale {
+  position: absolute;
+  top: 30px !important;
+  right: 30px !important;
+  left: initial !important;
+  border-radius: 0px;
+  min-width: initial;
+  min-height: initial;
+  padding: 8px;
+  line-height: 13px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1bbc9b;
+  color: #fff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .shop-cards {
+    width: 97%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .shop-section {
+    padding-top: 32%;
+  }
+
+  .shop-section h1 {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .shop-cards {
+    width: 97%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .shop-section {
+    padding-top: 72%;
+  }
+
+  .shop-section h1 {
+    width: 100%;
+    padding: 0 68px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 940px) {
+  .header_content .links {
+    transform: translateY(0);
+  }
+}

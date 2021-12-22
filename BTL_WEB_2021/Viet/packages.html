@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/lovetravel-thumbnail.jpg" sizes="32x32" />
+  <link rel="icon" href="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/lovetravel-thumbnail.jpg" sizes="192x192" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/packages.css">
+
+  <link rel="stylesheet" href="../Chi/style/buy.css" />
+
+  <link rel="stylesheet" href="../Thang/style/base.css">
+  <link rel="icon" href="../Thang/images/icon.jpg" sizes="192x192"/></head>
+  <title>Packages</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header_nav">
+      <div class="header_content">
+        <a href="../Thang/index.html"><img class="logo" src="../Thang/images/logo.png" alt="logo" /></a>
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <label for="show-menu" class="nav_overlay"></label>
+        <ul class="links">
+          <li><a href="../Thang/index.html">HOME</a></li>
+          <li class="hover_sub1">
+            <a class="active1" href="../Viet/packages.html" class="desktop-link">PACKAGES</a>
+            <input type="checkbox" id="show-package" />
+            <label for="show-package">PACKAGES</label>
+            <ul class="sub_nav">
+              <li class="trend">
+                <a href="../Viet/packages.html">Search 1</a>
+                <p class="sub1">Hot</p>
+              </li>
+              <li><a href="../Viet/packages.html">Search 2</a></li>
+              <li class="hover_sub2">
+                <a class="desktop-link" href="../Viet/packages.html"
+                  >Tour Package <i class="fas fa-caret-right"></i
+                ></a>
+                <input type="checkbox" id="show-items" />
+                <label class="res_hv2" for="show-items">Tour Package</label>
+                <ul class="sub_subnav">
+                  <li class="trend">
+                    <a href="../Viet/packages.html">Carousel</a>
+                    <p class="sub1 sub11">Best</p>
+                  </li>
+                  <li><a href="../Viet/packages.html">Custom Map</a></li>
+                  <li><a href="../Viet/packages.html">360° Panorama</a></li>
+                  <li><a href="../Viet/packages.html">Default</a></li>
+                </ul>
+              </li>
+              <li><a href="../Viet/packages.html">Destination</a></li>
+              <li><a href="../Viet/packages.html">Typology</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link" href="../Viet/shop.html">SHOP</a>
+            <input type="checkbox" id="show-shop" />
+            <label for="show-shop">SHOP</label>
+            <ul class="sub_nav">
+              <li><a href="../Viet/shop.html">Archive</a></li>
+              <li><a href="../Viet/shop.html">Single Product</a></li>
+              <li><a href="../Viet/shop.html">Cart</a></li>
+              <li><a href="../Viet/shop.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link" href="../Chi/aboutus.html">ABOUT US</a>
+            <input type="checkbox" id="show-about" />
+            <label for="show-about">ABOUT US</label>
+            <ul class="sub_nav">
+              <li class="trend">
+                <a href="../Chi/aboutus.html">About Us</a>
+                <p class="sub1">New</p>
+              </li>
+              <li><a href="../Chi/aboutus.html">About Us 2</a></li>
+              <li><a href="../Chi/aboutus.html">About Us 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../Chi/news.html" class="desktop-link">NEWS</a>
+            <input type="checkbox" id="show-news" />
+            <label for="show-news">NEWS</label>
+            <ul class="sub_nav">
+              <li><a href="../Chi/news.html">Archive</a></li>
+              <li class="hover_sub2">
+                <a class="desktop-link" href="../Chi/news.html"
+                  >Single Post <i class="fas fa-caret-right"></i
+                ></a>
+                <input type="checkbox" id="show-items2" />
+                <label class="res_hv2" for="show-items2">Single Post</label>
+                <ul class="sub_subnav">
+                  <li><a href="../Chi/news.html">Full Width</a></li>
+                  <li><a href="../Chi/news.html">Right Sidebar</a></li>
+                  <li><a href="../Chi/news.html">Left Sidebar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link" href="../Chi/contact.html">CONTACT</a>
+            <input type="checkbox" id="show-contact" />
+            <label for="show-contact">CONTACT</label>
+            <ul class="sub_nav">
+              <li><a href="../Chi/contact.html">Contact 1</a></li>
+              <li><a href="../Chi/contact.html">Contact 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="booknow" href="#">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-package">
+    <div class="package__option" style="background: url('img/bg-package.jpg') center center / cover no-repeat;">
+      <div class="title-packages">
+        <p class="title-1 mb-20">OUR PACKAGES</p>
+        <p class="title-2">Search your 
+          <span class="holiday-text position-relative">Holiday</span> 
+        </p>
+      </div>
+      
+      <div class="box-transparent p-3">
+        <div class="form-option row">
+          <div class="select-destination select-item col-xl-4 col-lg-12 col-md-12 col-12">
+            <p class="title-select mb-20">
+              Select Your Destination :
+            </p>
+            <div class="form__select flex-center">
+              <select class="form-select-destiation" name="form-select-destiation" id="form-select-destiation">
+                <option value="0">All Destinations</option>
+                <option value="1">Europe</option>
+                <option value="2">  - Italy</option>
+                <option value="3">  - Netherlands</option>
+                <option value="4">Asia</option>
+                <option value="5">  - Thailandia</option>
+                <option value="5">United States</option>
+                <option value="5">Oceania</option>
+              </select>
+              <img src="img/icon-pin-grey.png" alt="">
+            </div>
+          </div>
+          <div class="select-date select-item col-xl-4 col-lg-12 col-md-12 col-12">
+            <p class="title-select mb-20">
+              Select Your Date : 
+            </p>
+            <div class="form__select flex-center">
+              <input type="text" class="datepicker" id="datepicker" placeholder="mm-dd-yyyy">
+              <img src="img/icon-calendar-grey.png" alt="">
+            </div>
+          </div>
+          <div class="select-price select-item col-xl-4 col-lg-12 col-md-12 col-12">
+            <div class="d-flex justify-content-between">
+              <p class="title-select mb-2">
+                Max Price :
+              </p>
+              <p class="price-value">5000$</p>
+            </div>
+            <div class="progress-price">
+              <input  class="w-100 progress-value" type="range" min="0" max="10000" step="1">
+              <div class="progress-price-track"></div>
+            </div>
+            <div class="check-promotions flex-center">
+              <input type="checkbox" class="me-2">
+              <p>See only promotions</p>
+            </div>
+          </div>
+          <div class="btn-more-filter-box">
+            <button class="btn-more-filter flex-center br-30">
+              <img src="img/icon-filter-white.png" alt="filter-icon">
+              <p>MORE FILTERS</p>
+              <div class="box-transparent-filter">
+                <div class="filter-box row">
+                  <div class="filter-list col-xl-3 col-lg-12 col-md-12 col-12">
+                    <p class="title-filter">Typologies :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Relax
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Cultural
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Sport
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        History
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="filter-list col-xl-3 col-lg-12 col-md-12 col-12">
+                    <p class="title-filter">Durations :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        1 - 3 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        3 - 6 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        6 - 9 Days
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        9 - 12 Days
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="filter-list col-xl-3 col-lg-12 col-md-12 col-12">
+                    <p class="title-filter">Difficulty :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        High
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Low
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        Medium
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div class="filter-list col-xl-3 col-lg-12 col-md-12 col-12">
+                    <p class="title-filter">Min Age :</p>
+                    <ul>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        10 Years
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        18 Years
+                      </li>
+                      <li class="filter-item">
+                        <input type="checkbox" name="" id="">
+                        3 Years
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                
+              
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-left flex-center">
+          <div class="sort-price mr-30">PRICE
+
+            <i class="fas fa-angle-down"></i>
+            <div class="box-tranparent-sort">
+              <div class="sort-price-box">
+                <li class="sort-price-item text-uppercase sort-active">Lowest Price</li>
+                <li class="sort-price-item text-uppercase">Highest Price</li>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="sort-name">NAME
+            <i class="fas fa-angle-down"></i>
+            <div class="box-tranparent-sort">
+              <div class="sort-name-box">
+                <li class="sort-name-item text-uppercase sort-active">desc</li>
+                <li class="sort-name-item text-uppercase">asc</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-right flex-center">
+          <p class="sort-horizontal">
+            <i class="bi bi-list-ul mr-30 sort-btn-active"></i>
+          </p>
+          <p class="sort-vertical">
+            <i class="bi bi-grid-3x3-gap"></i>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="packages-cards row">
+      
+    </div>
+  </div>
+
+  <div class="tabs-card">
+    <div class="tab-card-item d-none">
+      <div class="tab-header" style="background: url('img/tabs-img/tab-img-1.jpg') center center /cover no-repeat">
+        <div class="tab-title">Berlin</div>
+        <div class="place-time flex-center">
+          <p class="location text-uppercase">
+            <img src="img/icon-pin-white.png" alt="">
+            Europe
+          </p>
+          <p class="time text-uppercase">
+            <img src="img/icon-time-white.png" alt="">
+            3 - 6 days
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-container">
+        <div class="d-flex pb-60 row">
+          <div class="part-left col-xl-8 col-lg-12 col-md-12 col-12">
+            <div class="part-left-header row">
+              <div class="box-header-item flex-center col-xl-4 col-lg-12 col-md-12 col-12">
+                <img src="img/tabs-icon/icon-typologies-greydark.png" alt="">
+                <div class="text">
+                  <p class="text-item-1">
+                    TYPOLOGIES
+                  </p>
+                  <p class="text-item-2">
+                    Cultural
+                    <span class="add-2 br-30">+2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="box-header-item flex-center col-xl-4 col-lg-12 col-md-12 col-12">
+                <img src="img/tabs-icon/icon-battery-greydark.png" alt="">
+                <div class="text">
+                  <p class="text-item-1">
+                    DIFFICULTY
+                  </p>
+                  <p class="text-item-2">
+                    Medium
+                  </p>
+                </div>
+              </div>
+              <div class="box-header-item flex-center col-xl-4 col-lg-12 col-md-12 col-12">
+                <img src="img/tabs-icon/icon-minage-greydark.png" alt="">
+                <div class="text">
+                  <p class="text-item-1">
+                    MIN. AGE
+                  </p>
+                  <p class="text-item-2">
+                    3 Years
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <iframe frameborder="0" src="https://www.google.com/maps/d/u/1/embed?mid=1b9ry5Sg2H7gaJw2jRhUJDNXYcbFjCfW2" class="iframe-1" width="100%" height="481"></iframe>
+          
+            <div class="box-btn-option">
+              <button class="btn-op btn-des btn-active">description</button>
+              <button class="btn-op btn-map">map</button>
+              <button class="btn-op btn-photo">photos</button>
+              <button class="btn-op btn-program">program</button>
+            </div>
+  
+            <div class="amazing-experience">
+              <div class="title-section">
+                Amazing Experience
+              </div>
+              <p class="mb-20">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis lorem. Nunc sodales interdum rhoncus. <u>Nulla a leo finibus</u>, ullamcorper lorem vel, scelerisque massa. Vivamus leo dui, interdum non fermentum eget, laoreet ac lorem. Aliquam a ultricies nisl. Nulla consequat lobortis urna sed cursus.
+              </p>
+  
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis lorem. Nunc sodales interdum rhoncus. Nulla a leo finibus, ullamcorper lorem vel, scelerisque massa. Vivamus leo dui, interdum non fermentum eget, <i>laoreet ac lorem</i>. Aliquam a ultricies nisl. Nulla consequat lobortis urna sed cursus.
+              </p>
+  
+              <div class="box-environment">
+                <div class="list-item row">
+                  <p class="title col-xl-6 col-lg-12 col-md-12 col-12">
+                    Entrance to the museums
+                  </p>
+                  <p class="description col-xl-6 col-lg-12 col-md-12 col-12">
+                    50% discount on all admissions
+                  </p>
+                </div>
+  
+                <div class="list-item row">
+                  <p class="title col-xl-6 col-lg-12 col-md-12 col-12">
+                    Travel with children and pets
+                  </p>
+                  <p class="description col-xl-6 col-lg-12 col-md-12 col-12">
+                    Possibility to rent the stroller
+                  </p>
+                </div>
+  
+                <div class="list-item row">
+                  <p class="title col-xl-6 col-lg-12 col-md-12 col-12">
+                    Travel by bus, car and minivan
+                  </p>
+                  <p class="description col-xl-6 col-lg-12 col-md-12 col-12">
+                    Air conditioning guaranteed
+                  </p>
+                </div>
+  
+                <div class="list-item row">
+                  <p class="title col-xl-6 col-lg-12 col-md-12 col-12">
+                    Package specifications
+                  </p>
+                  <div class="description col-xl-6 col-lg-12 col-md-12 col-12">
+                    <div class="des-item">
+                      <i class="fas fa-check"></i>
+                      Travel cancellation insurance
+                    </div>
+                    <div class="des-item">
+                      <i class="fas fa-check"></i>
+                      Breakfast and dinner included
+                    </div>
+                    <div class="des-item m-0">
+                      <i class="fas fa-check"></i>
+                      Health care included
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="list-item row">
+                  <p class="title col-xl-6 col-lg-12 col-md-12 col-12">
+                    Services NOT included
+                  </p>
+                  <div class="description col-xl-6 col-lg-12 col-md-12 col-12">
+                    <div class="des-item">
+                      <i class="fas fa-times"></i>
+                      Lunch not included in the package
+                    </div>
+                    <div class="des-item m-0">
+                      <i class="fas fa-times"></i>
+                      Baggage protection insurance
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="tour-map">
+              <div class="title-section mt-5 mb-0">
+                Tour map
+              </div>
+              <iframe frameborder="0" src="https://www.google.com/maps/d/u/1/embed?mid=1IkWHR1kZ8bBI1BmhTy-lycGVSTpggI0_" width="100%" height="487"></iframe>
+            </div>
+  
+            <div class="gallery">
+              <div class="title-section mt-40 mb-30">
+                Gallery
+              </div>
+              <div class="row img-gallery">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-12">
+                  <div class="row">
+                    <img src="img/gallary-img/img1.jpg" class="img-fluid img-1 mb-3 col-xl-6 col-lg-6 col-md-6 col-12" alt="">
+                    <img src="img/gallary-img/img2.jpg" class="img-fluid img-2 mb-3 col-xl-6 col-lg-6 col-md-6 col-12" alt="">
+                  </div>
+                  <img src="img/gallary-img/img3.jpg" class="img-fluid img-3 mb-3" alt="">
+                </div>
+                <img src="img/gallary-img/img4.jpg" class="img-fluid img-4 col-xl-4 col-lg-4 col-md-4 col-12" alt="">
+
+              </div>
+            </div>
+          
+            <div class="day-by-day mt-40 mb-40">         
+              <div class="title-section">
+                Day by Day
+              </div>
+  
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis lorem. Nunc sodales interdum rhoncus. <u>Nulla a leo finibus</u>, ullamcorper lorem vel, scelerisque massa. Vivamus leo dui, interdum non fermentum eget, laoreet ac lorem. Aliquam a ultricies nisl. Nulla consequat lobortis urna sed cursus. <u>ipsum dolor sit amet</u>, consectetur adipiscing elit consectef lorem vel, scelerisque massa. Vivamus leo dui, interdum non
+              </p>
+  
+              <div class="schedule">
+                <div class="day-item">
+                  <div class="icon-deatail"  >
+                    <img src="img/icon-add-white.png" class="deatail-active" alt="">
+                    <img src="img/icon-less-white.png"  alt="">
+                  </div>
+                  <div class="day text-uppercase">
+                    day 1 
+                  </div>
+                  <span class="detail ms-2"> - Departure at the airport and arrival at the hotel</span>
+                  <div class="tab-day-detail">
+                    Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.
+                  </div>
+                </div>
+
+                <div class="day-item">
+                  <div class="icon-deatail">
+                    <img src="img/icon-add-white.png" class="deatail-active" alt="">
+                    <img src="img/icon-less-white.png"  alt="">
+                  </div>
+                  <div class="day text-uppercase">
+                    day 2 
+                  </div>
+                  <span class="detail ms-2"> - Visit the main museums and lunch included</span>
+                  <div class="tab-day-detail">
+                    Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.
+                  </div>
+                </div>
+
+                <div class="day-item">
+                  <div class="icon-deatail"  >
+                    <img src="img/icon-add-white.png" class="deatail-active" alt="">
+                    <img src="img/icon-less-white.png"  alt="">
+                  </div>
+                  <div class="day text-uppercase">
+                    day 3
+                  </div>
+                  <span class="detail ms-2"> - Excursion in the natural oasis and picnic</span>
+                  <div class="tab-day-detail">
+                    Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.
+                  </div>
+                </div>
+
+                <div class="day-item">
+                  <div class="icon-deatail"  >
+                    <img src="img/icon-add-white.png" class="deatail-active" alt="">
+                    <img src="img/icon-less-white.png"  alt="">
+                  </div>
+                  <div class="day text-uppercase">
+                    day 4 
+                  </div>
+                  <span class="detail ms-2"> - Transfer to the airport and return to the agency</span>
+                  <div class="tab-day-detail">
+                    Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.
+                  </div>
+                </div>
+
+                <div class="day-item">
+                  <div class="icon-deatail"  >
+                    <img src="img/icon-add-white.png" class="deatail-active" alt="">
+                    <img src="img/icon-less-white.png"  alt="">
+                  </div>
+                  <div class="day text-uppercase">
+                    day 5
+                  </div>
+                  <span class="detail ms-2"> - Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                  <div class="tab-day-detail">
+                    Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.
+                  </div>
+                </div>
+              </div>
+  
+              
+            </div>
+            
+            
+          </div>
+  
+          <div class="part-right col-xl-4 col-lg-12 col-md-12 col-12">
+            <div class="part-right-header"  >700 
+              <span>$</span>
+            </div>
+            <div class="form-book">
+              <div class="d-flex">
+                <input type="text" class="mr-10" placeholder="Name">
+                <input type="text" class="" placeholder="surname">
+              </div>
+              <div class="d-flex">
+                <input type="email" class="mr-10" placeholder="Email">
+                <input type="text" class="" placeholder="Guests">
+              </div>
+              <input type="text" class="" placeholder="Phone">
+              <textarea type="message" class="" placeholder="Message"></textarea>
+  
+              <button class="btn-send text-uppercase"  >send now</button>
+            </div>
+            <img src="img/part-right-img.jpg" class="img-fluid mt-40 mb-40" alt="">
+            <div class="best-packages mb-40">
+              <div class="section-title">
+                Best Packages
+              </div>
+              <div class="best-package-item d-flex">
+                <img src="img/cards/card1-package.jpg" class="img-place" alt="">
+                <div class="location">
+                  <p class="place">
+                    Berlin
+                  </p>
+                  <p class="located">
+                    <img src="img/icon-pin-grey.png" alt="">
+                    Europe
+                  </p>
+                  <button class="btn-from" style="background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%)">from 700$</button>
+                </div>
+              </div>
+              <div class="best-package-item d-flex">
+                <img src="img/cards/card2-package.jpg" class="img-place" alt="">
+                <div class="location">
+                  <p class="place">
+                    HongKong
+                  </p>
+                  <p class="located">
+                    <img src="img/icon-pin-grey.png" alt="">
+                    Asia
+                  </p>
+                  <button class="btn-from" style="background: linear-gradient(to right, #f76570 0%, #f78d65 100%)">from 500$</button>
+                </div>
+              </div>
+              <div class="best-package-item d-flex">
+                <img src="img/cards/card3-package.jpg" class="img-place" alt="">
+                <div class="location">
+                  <p class="place">
+                    San Francisco
+                  </p>
+                  <p class="located">
+                    <img src="img/icon-pin-grey.png" alt="">
+                    Oceania
+                  </p>
+                  <button class="btn-from" style="background: linear-gradient(to right, #ba71da 0%, #da717b 100%)">from 400$</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search">
+              <div class="section-title">
+                Search
+              </div>
+              <input type="text">
+              <button class="btn-search text-uppercase mt-20">search</button>
+              <div class="package-card-flip" style="background: url('img/package-card-flip.jpg') center left / cover no-repeat">
+                <div class="mask-flip"></div>
+                <div class="flip-text">
+                  <p class="flip-text-1">Europe</p>
+                  <p class="flip-text-2">3 packages</p>
+                </div>
+                <img src="img/cards-icon/card-icon1.png" alt="">
+                <div class="sub-nav-flip">
+                  <p>Packages</p>
+                  <div class="text-center mb-20 mt-20">
+                    <p>Berlin</p>
+                    <p>Amsterdam</p>
+                    <p>Tuscany</p>
+                  </div>
+                  <button class="btn-view br-30">view destination</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tags">
+              <div class="section-title">
+                Tags
+              </div>
+              <div class="box-tags d-flex flex-wrap mb-30">
+                <p>adventure</p>
+                <p>agency</p>
+                <p>booking</p>
+                <p>family</p>
+                <p>holiday</p>
+                <p>packages</p>
+                <p>resort</p>
+                <p>tours</p>
+                <p>travel</p>
+                <p>wellness</p>
+
+              </div>
+              <div class="agency-open">
+                agency opening at
+                <p>9 AM</p>
+              </div>
+              <div class="agency-close mb-40">
+                agency will close at
+                <p>9 AM</p>
+              </div>
+
+              <div class="idea">
+                <p>Ctus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus.
+                </p>
+              </div>
+              <div class="flex-center mt-30 mb-20">
+                <img src="img/testimonial-1.jpg" class="author" alt="">
+                <div class="name-comment">
+                  <p class="name">jane goleman</p>
+                  <p>I love discover the world !</p>
+                </div>
+              </div>
+
+              <div class="package-card-flip mt-40" style="background: url('img/package-card-flip.jpg') center center / cover no-repeat">
+                <img src="img/cards-icon/card-icon1.png" alt="">
+                <div class="mask-flip"></div>
+                <div class="flip-text">
+                  <p class="flip-text-1">Oceania</p>
+                  <p class="flip-text-2">1 package</p>
+                </div>
+                <div class="sub-nav-flip">
+                  <p>Packages</p>
+                  <div class="text-center mb-20 mt-20">
+                    <p>San Francisco</p>
+                  </div>
+                  <button class="btn-view br-30">view destination</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="related">
+        <div class="related-box-text text-center">
+          <p class="text-uppercase text-center">related</p>
+          <p class="text-uppercase package-text">packages</p>
+        </div>
+
+        <div class="packages-cards mt-0 flex-center">
+  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer mt-5" style="width: 100%">
+    <div class="footer_content">
+      <div class="left">
+        <img src="../Thang/images/logo.png" alt="logo" />
+        <p class="text_footer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          ut diam et nibh <u>condimentum</u> venenatis eu ac magnasin.
+          Quisque interdum est mauris, eget ullamcorper.
+        </p>
+        <div class="social_icon">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h3 class="title_footer">OUR AGENCY</h3>
+        <div class="ele">
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Services</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Insurancee</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Agency</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Tourism</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Payment</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3 class="title_footer">PARTNERS</h3>
+        <div class="ele">
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Booking</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">RentalCar</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">HostelWorld</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Trivago</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">TripAdvisor</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3 class="title_footer">LAST MINUTE</h3>
+        <div class="ele">
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">London</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">California</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Indonesia</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Europe</a>
+          </div>
+          <div class="ele_child">
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Oceania</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_footer">
+      <div class="text_left">
+        <p>THE BEST WORDPRESS TRAVEL THEME</p>
+      </div>
+      <div class="text_right">
+        <p>COPYRIGHT NICDARK THEMES 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="buy">
+    <span class="buynow">BUY NOW</span>
+    <a href="https://1.envato.market/PZ42q" target="_blank" class="circle">
+        <span class="up">$</span>
+        <span class="num text-center">54</span>
+    </a>
+  </div>
+  <div class="leaf">
+      <a href="https://1.envato.market/PZ42q" target="_blank" class="circle-leaf">
+          <img class="leaf-img" src="../Chi/images/leaf.png" style="width: 15px;">
+      </a>
+  </div>
+
+  <script src="js/package-cards.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Datepicker -->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <script src="../Thang/js/smooth.js"></script>
+</body>
+</html>
